@@ -32,13 +32,13 @@ class Main extends PluginBase implements CommandExecutor{
   }
 
   public function onJoin(PlayerJoinEvent $event){
-    foreach($this->data->getAll() as $data){
-      if($event->getPlayer()->getName() === $data){
+    $p = $event->getPlayer()->getName();
+    if(isset($this->data->getAll()[$p])){
+        $data = $this->data->getAll()[$p];
         foreach($data as $perm){
           $perm = Server::getInstance()->getPluginManager()->getPermission($perm);
           $event->getPlayer()->addAttachment($this, $perm, true);
         }
-      }
     }
   }
 

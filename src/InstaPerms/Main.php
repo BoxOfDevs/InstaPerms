@@ -1,25 +1,23 @@
 <?php
 
 /*
-  InstaPerms by the BoxOfDevs Team (boxofdevs.com)
-  Copyright © 2017 BoxOfDevs Team - BoxOfDevs General Software License 1.1.2
+	InstaPerms by the BoxOfDevs Team (boxofdevs.com)
+	Copyright © 2017 BoxOfDevs Team - BoxOfDevs General Software License 1.1.2
 */
 
 namespace InstaPerms;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as TF;
-use pocketmine\command\PluginCommand;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor;
 use pocketmine\permission\Permission;
-use pocketmine\Player;
 use pocketmine\event\Listener;
+use pocketmine\Player;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\IPlayer;
 use pocketmine\Server;
-use pocketmine\event\player\PlayerCommandPreprocessEvent;
 
 class Main extends PluginBase implements CommandExecutor {
 	
@@ -91,15 +89,15 @@ class Main extends PluginBase implements CommandExecutor {
 			return true;
 			case "hasperm":
 			if(!isset($args[1])){
-				$sender->sendMessage(self::PREFIX . TF::DARK_RED . "Usage: /hasperm <player> <permission>");
+				$sender->sendMessage(self::PREFIX.TF::DARK_RED."Usage: /hasperm <player> <permission>");
 			}else{
 				$playername = $args[0];
 				$player = $this->getServer()->getPlayer($playername);
 				$perm = $args[1];
 				if($player->hasPermission($perm)){
-					$sender->sendMessage(self::PREFIX.TF::AQUA.$playername." has permission ".$perm.".");
+					$sender->sendMessage(self::PREFIX.TF::AQUA.$playername.TF::GOLD." has permission ".TF::GREEN.$perm.TF::GRAY.".");
 				}else{
-					$sender->sendMessage(self::PREFIX.TF::AQUA.$playername." doesn't have permission ".$perm.".");
+					$sender->sendMessage(self::PREFIX.TF::AQUA.$playername.TF::RED." doesn't have permission ".TF::GREEN.$perm.TF::GRAY.".");
 				}
 			}
 			return true;

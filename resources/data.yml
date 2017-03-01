@@ -1,5 +1,4 @@
 ---
-
 someone:
   - "pocketmine.command.time"
   - "pocketmine.command.list"
@@ -7,5 +6,4 @@ someone:
   - "pocketmine.command.reload"
   - "pocketmine.command.version"
   - "pocketmine.command.gamemode"
-
 ...

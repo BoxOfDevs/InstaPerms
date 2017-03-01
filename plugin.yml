@@ -1,39 +1,38 @@
 name: InstaPerms
-author: BoxOfDevs Team
+main: InstaPerms\Main
 version: 1.1.1
-description: The instant permissions manager that really is instant!
 api:
-- 1.0.0
 - 2.0.0
 - 3.0.0
 - 3.0.0-ALPHA1
 - 3.0.0-ALPHA2
 - 3.0.0-ALPHA3
 - 3.0.0-ALPHA4
-main: InstaPerms\Main
+author: BoxOfDevs-Team
+description: The instant permissions manager that really is instant!
 commands:
-  setperm:
-      usage: "/setperm <player> <permission>"
-      description: "Gives a player a permission"
-      permission: instaperms.set
-  rmperm:
-    usage: "/rmperm <player> <permission>"
-    description: "Removes a players permission"
-    permission: instaperms.rm
-  hasperm:
-    usage: "/hasperm <player> <permission>"
-    description: "Checks if a player has a permission"
-    permission: instaperms.has
-  seeperms:
-    usage: "/seeperms <player>"
-    description: "Shows all a players permissions"
-    permission: instaperms.see
+    setperm:
+        usage: "/setperm <player> <permission>"
+        description: "Gives a player a permission"
+        permission: instaperms.set
+    rmperm:
+        usage: "/rmperm <player> <permission>"
+        description: "Removes a players permission"
+        permission: instaperms.rm
+    hasperm:
+        usage: "/hasperm <player> <permission>"
+        description: "Checks if a player has s permission"
+        permission: instaperms.has
+    seeperms:
+        usage: "/seeperms <player>"
+        description: "Shows all a players permissions"
+        permission: instaperms.see
 permissions:
-  instaperms.set:
-    default: op
-  instaperms.rm:
-    default: op
-  instaperms.has:
-    default: op
-  instaperms.see:
-    default: op
+    instaperms.set:
+        default: op
+    instaperms.rm:
+        default: op
+    instaperms.has:
+        default: op
+    instaperms.see:
+        default: op

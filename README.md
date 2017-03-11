@@ -1,7 +1,9 @@
 # InstaPerms
 The instant permissions manager that really is instant!
 
-[![Poggit-CI](https://poggit.pmmp.io/ci.badge/BoxOfDevs/InstaPerms/InstaPerms)](https://poggit.pmmp.io/ci/BoxOfDevs/InstaPerms/InstaPerms)
+[![Build Status](http://46.4.105.238:8080/buildStatus/icon?job=InstaPerms)](http://46.4.105.238:8080/job/InstaPerms/)
+## Download
+Head to our [jenkins server](http://46.4.105.238:8080/job/InstaPerms/) and get the build from last successful artefacts ([permalink to latest phar])(http://46.4.105.238:8080/job/InstaPerms/lastSuccessfulBuild/artifact/InstaPerms.phar). You can also find an archive of all previous versions.
 
 # Documentation
     Commands
